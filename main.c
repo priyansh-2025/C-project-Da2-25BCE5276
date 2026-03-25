@@ -36,11 +36,11 @@ int main() {
     do {
         printf("\n========== INVENTORY MANAGEMENT ==========\n");
         printf("1. Add Product\n");
-        printf("2. Update Stock\n");
-        printf("3. Delete Product\n");
+        printf("2. Modify Inventory Quantity\n");
+        printf("3. Remove an Item\n");
         printf("4. Search Product\n");
-        printf("5. Low-Stock Report\n");
-        printf("6. Show Total Inventory Value\n");
+        printf("5. Low Inventory Alert\n");
+        printf("6. Display Inventory List\n");
         printf("7. Save & Exit\n");
         printf("==========================================\n");
         printf("Enter your choice: ");
