@@ -4,13 +4,13 @@
 void displayMenu() {
     printf("\n==================================\n");
     printf("1. Add Product\n");
-    printf("2. Update Stock (Purchase/Sale)\n");
-    printf("3. Delete Product\n");
+    printf("2. Modify Inventory Quantity\n");
+    printf("3. Remopve Item\n");
     printf("4. Search by ProductID\n");
-    printf("5. Low-stock Report\n");
-    printf("6. Show Total Inventory Value\n");
-    printf("7. Show All Products\n");
-    printf("8. Save and Exit\n");
+    printf("5. Low Inventory Alert\n");
+    printf("6. Calculate Inventory Worth\n");
+    printf("7. Display Inventory List\n");
+    printf("8. Save Changes and Exit\n");
     printf("==================================\n");
     fflush(stdout);
 }
