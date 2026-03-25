@@ -1,0 +1,18 @@
+--- Loading Emscripten SDK ---
+Setting up EMSDK environment (suppress these messages with EMSDK_QUIET=1)
+Adding directories to PATH:
+PATH += D:\C_MiniProject\emsdk
+PATH += D:\C_MiniProject\emsdk\upstream\emscripten
+
+Setting environment variables:
+PATH = D:\C_MiniProject\emsdk;D:\C_MiniProject\emsdk\upstream\emscripten;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\VISHRUTHMURALIDHARAN\AppData\Local\Programs\Python\Python313;C:\Users\VISHRUTHMURALIDHARAN\AppData\Local\Programs\Python\Python313\Scripts;C:\MinGW\bin;C:\Program Files\nodejs\;C:\Users\VISHRUTHMURALIDHARAN\AppData\Local\Programs\Python\Launcher\;C:\Users\VISHRUTHMURALIDHARAN\AppData\Local\Microsoft\WindowsApps;C:\Users\VISHRUTHMURALIDHARAN\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VISHRUTHMURALIDHARAN\AppData\Roaming\npm;C:\Users\VISHRUTHMURALIDHARAN\AppData\Local\Programs\Antigravity\bin
+EMSDK = D:/C_MiniProject/emsdk
+EMSDK_NODE = D:\C_MiniProject\emsdk\node\22.16.0_64bit\bin\node.exe
+EMSDK_PYTHON = D:\C_MiniProject\emsdk\python\3.13.3_64bit\python.exe
+Clearing existing environment variable: EMSDK_PY
+--- Compiling Project to WebAssembly ---
+src\fileops.c:36:5: error: call to undeclared function 'terminal_print'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   36 |     terminal_print(">> Inventory saved to '%s' successfully.\n", FILENAME);
+      |     ^
+1 error generated.
+emcc: error: ''D:/C_MiniProject/emsdk/upstream/bin\clang.exe' -target wasm32-unknown-emscripten -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr '--sysroot=D:\C_MiniProject\emsdk\upstream\emscripten\cache\sysroot' -Xclang '-iwithsysroot/include\fakesdl' -Xclang '-iwithsysroot/include\compat' -Iinclude -c 'src\fileops.c' -o 'C:\Users\VISHRU~1\AppData\Local\Temp\emscripten_temp_pzbzlblg\fileops.o'' failed (returned 1)
